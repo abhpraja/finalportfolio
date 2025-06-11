@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abhi.</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header id="site-header">
+        <a href="" class="site-logo">abhi.</a>
+
+        <nav id="main-nav">
+            <ul>
+                <li>
+                    <button class="menu-close-button" onclick="closeSidebar()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Project</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="" class="resume-button">Resume</a></li>
+            </ul>
+        </nav>
+
+        <button class="menu-open-button" onclick="openSidebar()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+    </header>
+
+    <section id="about-section">
+        <h2 class="title">About Me</h2>
+        <div class="about-content">
+            <img src="./imgs/img2.JPG" alt="Abhishek Prajapati" />
+            <div class="about-description">
+                <h3 class="about-heading">MYSELF</h3>
+                <h4>
+                    Hi, I'm Abhishek Prajapati, a recent graduate in Computer Science Engineering from MIT ADT
+                    University.
+                    During my studies, I discovered a strong interest in web development and UI/UX design, which I
+                    actively explored
+                    through self-learning, certifications, and hands-on projects.
+                </h4>
+                <br>
+                <h4>
+                    Hi, I'm Abhishek Prajapati, a recent graduate in Computer Science Engineering from MIT ADT
+                    University.
+                    During my studies, I discovered a strong interest in web development and UI/UX design, which I
+                    actively explored
+                    through self-learning, certifications, and hands-on projects.
+                </h4>
+
+                <div class="education-section">
+                    <h3>EDUCATION</h3>
+                    <div class="education-card">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h4>MIT ADT University</h4>
+                        <div class="education-date">
+                            <h4>2021-25</h4>
+                        </div>
+                    </div>
+                    <div class="education-card">
+                        <i class="fa-solid fa-school"></i>
+                        <h4>Sinhgard City School</h4>
+                        <div class="education-date">
+                            <h4>2020</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skill-section">
+        <h2 class="title">Skills</h2>
+        <div class="skills-content">
+            <div class="skill-boxs">
+                <div class="skill-box">
+                    <i class="fa-brands fa-java"></i>
+                    Java
+                </div>
+                <div class="skill-box">
+                    <i class="fa-brands fa-js"></i>
+                    Javascript
+                </div>
+                <div class="skill-box">
+                    <i class="fa-brands fa-react"></i>
+                    React
+                </div>
+                <div class="skill-box">
+                    <i class="fa-brands fa-html5"></i>
+                    HTML
+                </div>
+                <div class="skill-box">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    CSS
+                </div>
+            </div>
+
+            <div class="skill-boxs">
+                <div class="skill-box">
+                    <i class="fa-brands fa-figma"></i>
+                    Figma
+                </div>
+                <div class="skill-box">
+                    <i class="fa-brands fa-node-js"></i>
+                    Node
+                </div>
+                <div class="skill-box">
+                    <i class="fa-brands fa-fort-awesome"></i>
+                    Font Awesome
+                </div>
+                <div class="skill-box">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    Bootstrap
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects-section">
+        <h2 class="title">Projects</h2>
+        <div class="projects-wrapper">
+            <div class="project-card">
+                <div class="project-img">
+                    <img data-scroll data-scroll-speed="-1.5"
+                        src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                </div>
+                <div class="project-deatils">
+                    <h3>Crosscan <br> Reflected XSS Scanner</h3>
+                    <div class="project-info">
+                        <p>
+                            Built a Reflected XSS vulnerability scanner using MERN stack. Crosscan detects and reports
+                            potential
+                            reflected XSS flaws in web applications by injecting custom payloads and analyzing server
+                            responses.
+                        </p>
+                    </div>
+                    <div class="project-links">
+                        <button class="modal-open-btn">Know More...</button>
+                        <!-- <a href="https://github.com/Saiken7/CrossScan-XSS-Vulnerability-Scanner">
+                            <i class="fa-brands fa-github-alt"></i>
+                        </a> -->
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img data-scroll data-scroll-speed="-1.5"
+                        src="https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                </div>
+                <div class="project-deatils">
+                    <h3>Crosscan <br> Reflected XSS Scanner</h3>
+                    <div class="project-info">
+                        <p>
+                            Built a Reflected XSS vulnerability scanner using MERN stack. Crosscan detects and reports
+                            potential
+                            reflected XSS flaws in web applications by injecting custom payloads and analyzing server
+                            responses.
+                        </p>
+                    </div>
+                    <div class="project-links">
+                        <button class="modal-open-btn">Know More...</button>
+                        <!-- <a href="https://github.com/Saiken7/CrossScan-XSS-Vulnerability-Scanner">
+                            <i class="fa-brands fa-github-alt"></i>
+                        </a> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <div class="contact-text">
+            <span>LET'S MAKE</span>
+            <span>SOMETHING</span>
+            <span>SPECIAL</span>
+        </div>
+
+        <button class="contact-btn">
+            Contact <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
