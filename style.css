@@ -219,6 +219,10 @@ nav a:hover {
     flex-direction: column;
 }
 
+.edu-name {
+    width: 100%;
+}
+
 .education-date,
 .work-date {
     position: absolute;
@@ -242,10 +246,10 @@ nav a:hover {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: end;
-    justify-content: center;
 }
 
 .skill-boxs {
+    margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -401,7 +405,7 @@ nav a:hover {
 
 .contact-container form {
     width: 450px;
-    height: 450px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
 }
@@ -564,4 +568,16 @@ textarea:focus {
         font-size: 70px;
     }
 
+    .edu-name h3 {
+        width: 170px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .contact-container form {
+        width: 100%;
+    }
 }
